@@ -96,6 +96,7 @@ To run the application, execute the following commands:
 python TimetableApp.py
 ```
 
+## CSV File Example
 Ensure that you have the required CSV file in the appropriate format ready for upload.
 
 Departament,Course,Days,Times
