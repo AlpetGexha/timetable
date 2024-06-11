@@ -9,6 +9,7 @@ class TimetableApp:
     def __init__(self, root):
         self.root = root
         self.root.title("University Timetable")
+        self.root.configure(bg='green')
 
         self.filename = tk.StringVar()
         self.selected_courses = []
@@ -20,8 +21,13 @@ class TimetableApp:
 
     def setup_ui(self):
         """Set up the user interface."""
-        frame = tk.Frame(self.root)
-        frame.pack(pady=10)
+        style = ttk.Style()
+        style.configure('TButton', font=('Helvetica', 10), padding=5)
+        style.configure('TLabel', font=('Helvetica', 10), padding=5)
+        style.configure('TCombobox', font=('Helvetica', 10))
+
+        frame = ttk.Frame(self.root, padding=10)
+        frame.grid(row=0, column=0, padx=10, pady=10)
 
         self.create_file_input(frame)
         self.create_filters(frame)
@@ -32,46 +38,44 @@ class TimetableApp:
 
     def create_file_input(self, frame):
         """Create file input elements."""
-        tk.Label(frame, text="CSV File:").grid(row=0, column=0, padx=5)
-        tk.Entry(frame, textvariable=self.filename, width=40).grid(row=0, column=1, padx=5)
-        tk.Button(frame, text="Browse", command=self.browse_file).grid(row=0, column=2, padx=5)
+        ttk.Label(frame, text="CSV File:").grid(row=0, column=0, padx=5, pady=5, sticky='e')
+        ttk.Entry(frame, textvariable=self.filename, width=40).grid(row=0, column=1, padx=5, pady=5, sticky='w')
+        ttk.Button(frame, text="Browse", command=self.browse_file).grid(row=0, column=2, padx=5, pady=5, sticky='w')
 
     def create_filters(self, frame):
         """Create filter elements."""
-        tk.Label(frame, text="Year:").grid(row=1, column=0, padx=5)
+        ttk.Label(frame, text="Year:").grid(row=1, column=0, padx=5, pady=5, sticky='e')
+        self.year_cb = ttk.Combobox(frame, values=["1", "2", "3", "4"])
+        self.year_cb.grid(row=1, column=1, padx=5, pady=5, sticky='w')
 
-        # Create a style for the Combobox with a blue background
-        style = ttk.Style()
-        style.configure("TCombobox", fieldbackground="blue")
-
-        self.year_cb = ttk.Combobox(frame, values=["1", "2", "3", "4"], style="TCombobox")
-        self.year_cb.grid(row=1, column=1, padx=5, sticky='w')
-
-        tk.Label(frame, text="Departament:").grid(row=1, column=2, padx=5)
-        self.code_entry = tk.Entry(frame, width=10)
-        self.code_entry.grid(row=1, column=3, padx=5, sticky='w')
+        ttk.Label(frame, text="Department:").grid(row=1, column=2, padx=5, pady=5, sticky='e')
+        self.code_entry = ttk.Entry(frame, width=10)
+        self.code_entry.grid(row=1, column=3, padx=5, pady=5, sticky='w')
 
     def create_buttons(self, frame):
         """Create action buttons."""
-        tk.Button(frame, text="Display", command=self.display_courses).grid(row=2, column=0, pady=10)
-        tk.Button(frame, text="Clear", command=self.clear_selection).grid(row=2, column=1, pady=10)
-        tk.Button(frame, text="Save", command=self.save_timetable).grid(row=2, column=2, pady=10)
+        ttk.Button(frame, text="Display", command=self.display_courses).grid(row=2, column=0, padx=5, pady=10,
+                                                                             sticky='w')
+        ttk.Button(frame, text="Clear", command=self.clear_selection).grid(row=2, column=1, padx=5, pady=10, sticky='w')
+        ttk.Button(frame, text="Save", command=self.save_timetable).grid(row=2, column=2, padx=5, pady=10, sticky='w')
 
     def create_course_listbox(self, frame):
         """Create the course listbox."""
-        self.course_listbox = tk.Listbox(frame, selectmode=tk.SINGLE, width=60, height=15)
+        self.course_listbox = tk.Listbox(frame, selectmode=tk.SINGLE, width=60, height=15, bg='white', fg='black',
+                                         font=('Helvetica', 10))
         self.course_listbox.grid(row=3, column=0, columnspan=4, pady=10)
         self.course_listbox.bind('<<ListboxSelect>>', self.select_course)
 
     def create_warning_label(self, frame):
         """Create the warning label."""
-        self.warning_label = tk.Label(frame, text="", fg="red")
-        self.warning_label.grid(row=4, column=0, columnspan=4)
+        self.warning_label = ttk.Label(frame, text="", foreground="red")
+        self.warning_label.grid(row=4, column=0, columnspan=4, pady=5)
 
     def create_selected_courses_display(self, frame):
         """Create the text widget to display selected course details."""
-        tk.Label(frame, text="Selected Courses:").grid(row=3, column=4, padx=5, sticky='n')
-        self.selected_courses_text = tk.Text(frame, width=40, height=15, state=tk.DISABLED)
+        ttk.Label(frame, text="Selected Courses:").grid(row=3, column=4, padx=5, pady=5, sticky='n')
+        self.selected_courses_text = tk.Text(frame, width=40, height=15, state=tk.DISABLED, bg='white', fg='black',
+                                             font=('Helvetica', 10))
         self.selected_courses_text.grid(row=3, column=5, padx=5, pady=10)
 
     def browse_file(self):
@@ -86,7 +90,7 @@ class TimetableApp:
             with open(self.filename.get(), 'r') as file:
                 reader = csv.reader(file)
                 self.courses = [{"Code": row[0], "Course": row[1], "Days": row[2], "Times": row[3]} for row in reader if
-                    len(row) >= 4]
+                                len(row) >= 4]
         except Exception as e:
             messagebox.showerror("Error", f"Could not read file: {e}")
 
@@ -104,7 +108,7 @@ class TimetableApp:
         code = self.code_entry.get().upper()  # Ensure code is uppercase
 
         self.filtered_courses = [course for course in self.courses if
-            (not year or year in course['Code']) and (not code or code in course['Code'].upper())]
+                                 (not year or year in course['Code']) and (not code or code in course['Code'].upper())]
 
         if not self.filtered_courses:
             self.warning_label.config(text="No courses found for the given filter.")
@@ -159,10 +163,10 @@ class TimetableApp:
         self.selected_courses_text.delete(1.0, tk.END)
         for course in self.selected_courses:
             self.selected_courses_text.insert(tk.END, f"Course: {course['Course']}\n")
-            self.selected_courses_text.insert(tk.END, f"Departament: {course['Code']}\n")
+            self.selected_courses_text.insert(tk.END, f"Department: {course['Code']}\n")
             self.selected_courses_text.insert(tk.END, f"Days: {course['Days']}\n")
             self.selected_courses_text.insert(tk.END, f"Times: {course['Times']}\n")
-            self.selected_courses_text.insert(tk.END, "-"*40 + "\n")
+            self.selected_courses_text.insert(tk.END, "-" * 40 + "\n")
         self.selected_courses_text.config(state=tk.DISABLED)
 
     def clear_selection(self):
