@@ -1,0 +1,104 @@
+CHI 101,Chinese I,Wednesday,10:00-13:00
+CS 200,Summer Practice,,
+CS 240,Exploratory Data Analysis,Wednesday Friday,09:00-11:00 11:00-12:00
+CS 300,Summer Practice,,
+CS 340,Computer Systems,Tuesday Thursday,09:00-10:00 09:00-11:00
+CS 352,Operating Systems,Tuesday Thursday,17:00-18:00 17:00-19:00
+CS 362,Machine Intelligence,Monday Wednesday,15:00-16:00 15:00-17:00
+CS 372,Advanced Algorithms,Tuesday Thursday,14:00-16:00 15:00-16:00
+ECE 504,Advanced Communication Circuits,Tuesday Thursday,17:00-19:00 18:00-19:00
+ECE 510,Statistical Signal Processing II: Detection Theory,Tuesday Thursday,14:00-15:00 14:00-16:00
+ECE 518,Digital Communications II,Monday Wednesday,16:00-17:00 16:00-18:00
+ECE 520,Software Based Startups,Tuesday Thursday,16:00-17:00 16:00-18:00
+ECE 529,Multimedia Systems,Tuesday Thursday,11:00-13:00 11:00-12:00
+ECE 541,Nano and Micro Electro Mechanical Systems,Tuesday Thursday,15:00-17:00 16:00-17:00
+ECE 578,Data Visualization,Wednesday Friday,10:00-12:00 11:00-12:00
+ECE 580,Networks,Tuesday Thursday,13:00-15:00 14:00-15:00
+ECE 586,Computational Genomics,Wednesday,17:00-20:00
+ECE 588,Agile Methods,Thursday,17:00-20:00
+ECE 589,Natural Language Processing,Wednesday,14:00-17:00
+ECE 591 A,Graduate Seminar I,Wednesday,12:00-13:00
+ECON 202,Microeconomics,Tuesday Thursday,12:00-13:00 12:00-14:00
+EE 200,Summer Practice,,
+EE 300,Summer Practice,,
+EE 302,Microelectronic Circuit Design,Monday Wednesday Friday,11:00-12:00 10:00-12:00 15:00-17:00
+EE 321,Electromagnetics,Tuesday Thursday,12:00-13:00 12:00-14:00
+EE 324,Control Systems,Tuesday,09:00-12:00
+EE 332,Microprocessors,Monday Wednesday Friday,15:00-17:00 16:00-17:00 17:00-19:00
+EECS 201,System Design Fundamentals,Thursday,11:00-14:00
+EECS 202,Basic Digital Communication with Network,Friday,15:00-18:00
+EECS 216,Signals and Systems,Thursday,09:00-12:00
+EECS 218 01,Digital Logic Design (Section I),Tuesday Thursday,13:00-15:00 14:00-15:00
+EECS 403,Digital Circuit Design,Thursday,12:00-15:00
+EECS 404,Communication Circuits,Tuesday Thursday,17:00-19:00 18:00-19:00
+EECS 415,Digital Signal Processing,Friday,14:00-17:00
+EECS 420,Software Based Startups,Tuesday Thursday,16:00-17:00 16:00-18:00
+EECS 428,Data Visualization,Wednesday Friday,10:00-12:00 11:00-12:00
+EECS 429,Multimedia,Tuesday Thursday,11:00-13:00 11:00-12:00
+EECS 441,Nano and Micro Electro Mechanical Systems,Tuesday Thursday,15:00-17:00 16:00-17:00
+EECS 486,Computational Genomics,Wednesday,17:00-20:00
+ENGR 100 01,Computer Skills (Section II),Tuesday,14:00-16:00
+ENGR 105,Introduction to Engineering,Tuesday,12:00-14:00
+ENGR 211 01,Introduction to Programming (Section I),Monday,09:00-11:00
+ENGR 212 01,Programming Practice (Section I),Monday,09:00-11:00
+ENGR 212 P3,Programming Practice (Practice III),Wednesday,17:00-19:00
+ENGR 244,Engineering Materials,Wednesday Friday,14:00-15:00 14:00-16:00
+ENGR 246,Manufacturing Processes,Wednesday Friday,11:00-13:00 11:00-12:00
+ENGR 251 01,Probability for Engineers,Monday Wednesday,11:00-13:00 11:00-13:00
+ENGR 252,Statistics for Engineers,Wednesday Friday,09:00-11:00
+ENGR 497 01,Global Design Project I (Section I),Friday,09:00-11:00
+ENGR 498 01,Global Design Project II (Section I),Friday,09:00-11:00
+FRE 101 01,French I (Section I),Monday Wednesday,16:00-18:00 17:00-18:00
+FRE 102,French II,Monday Wednesday,13:00-15:00 14:00-15:00
+FRE 201,French III,Monday Wednesday,11:00-12:00 11:00-13:00
+GER 101 01,German I (Section I),Monday Wednesday,15:00-17:00 16:00-17:00
+GER 102,German II,Tuesday Thursday,11:00-13:00 12:00-13:00
+GER 201,German III,Tuesday Thursday,10:00-11:00 10:00-12:00
+GER 202,German IV,Monday Wednesday,12:00-13:00 11:00-13:00
+IE 200,Summer Practice,,
+IE 300,Summer Practice,,
+IE 316,Engineering Economics,Monday Thursday,11:00-13:00
+IE 322,Stochastic Models in OR,Tuesday Thursday,14:00-16:00
+IE 333,Quality Engineering and Reliability,Tuesday Thursday,16:00-18:00 16:00-17:00
+IE 344,Inventory Control,Tuesday,10:00-13:00
+IE 434,Data Mining,Monday,09:00-12:00
+IE 451,Project Management,Monday Wednesday,09:00-11:00 09:00-10:00
+IE 488,Agile Methods,Thursday,17:00-20:00
+ISE 524,Computer Simulation Techniques,Tuesday,11:00-14:00
+ISE 531,Probability and Statistics for Engineers,Thursday,11:00-14:00
+ISE 534,Data Mining,Monday,09:00-12:00
+ISE 551,Advanced Topics in Project Management,Monday Wednesday,09:00-11:00 09:00-10:00
+ISE 588,Agile Methods,Thursday,17:00-20:00
+ISE 591 A,Graduate Seminar I,Wednesday,12:00-13:00
+ISE 595,Master Project,,
+ISE 599,Masterÿ Thesis,,
+LIFE 101,Life Sciences I - Chemistry,Thursday,14:00-17:00
+LIFE 102,Life Sciences II - Biology,Monday,15:00-18:00
+MATH 100 01,Mathematics for Business (Section I),Tuesday Thursday,11:00-12:00 10:00-12:00
+MATH 103,Calculus I,Tuesday Thursday,09:00-11:00 09:00-10:00
+MATH 104 01,Calculus II (Section I),Tuesday Thursday,09:00-11:00 09:00-10:00
+MATH 205,Linear Algebra,Tuesday Thursday,09:00-11:00
+MGT 100,Introduction to Business,Monday Wednesday,17:00-18:00 16:00-18:00
+MGT 200,Summer Internship I,,
+MGT 202,Organizational Behavior,Friday,17:00-20:00
+MGT 204,Managerial Accounting,Monday Wednesday,15:00-17:00 15:00-16:00
+MGT 206,Statistical Analysis,Tuesday Thursday,13:00-15:00
+MGT 300,Summer Internship II,,
+MGT 304,Money and Banking,Friday,09:00-12:00
+MGT 308,Organization Theory,Monday Wednesday,17:00-18:00 16:00-18:00
+MGT 332,Management Information Systems,Monday Wednesday,09:00-11:00 09:00-10:00
+MGT 423,Marketing Communications,Monday Wednesday,11:00-13:00 11:00-12:00
+MGT 436,Entrepreneurship,Wednesday,13:00-16:00
+MGT 452,Business Research,Tuesday Thursday,09:00-11:00 09:00-10:00
+UNI 100 02,Exploring Istanbul,Wednesday,16:00-18:00
+UNI 101,Mathematical Reasoning,Monday,09:00-12:00
+UNI 111 01,Critical Reading and Writing in Turkish I (Section,Monday Wednesday,17:00-19:00 18:00-19:00
+UNI 112 01,Critical Reading and Writing in Turkish II (Sectio,Monday Wednesday,17:00-19:00 18:00-19:00
+UNI 118 D12,Understanding Politics and Economy (Discussion XII,Friday,16:00-17:00
+UNI 123 01,Textual Analysis and Effective Communication (Sect,Monday Wednesday,17:00-19:00 18:00-19:00
+UNI 124 05,Textual Analysis and Academic Writing (Section V),Monday Wednesday,16:00-17:00 16:00-18:00
+UNI 202 03,Formation of Modern Turkey II - English (Section III),Wednesday,12:00-15:00
+UNI 203,Understanding Science and Technology,Wednesday,09:00-12:00
+UNI 204,Understanding Nature and Knowledge,Tuesday Thursday,15:00-16:00 15:00-17:00
+UNI 207,Understanding Religion,Monday,12:00-15:00
+UNI 222 01,World Civilizations and Global Encounters (Section,Tuesday Thursday,12:00-13:00 12:00-14:00
